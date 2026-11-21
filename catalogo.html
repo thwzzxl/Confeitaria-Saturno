@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Conheça o catálogo da Confeitaria Saturno: bolos, doces, festas, salgados e tábuas de frios em Belo Horizonte.">
+ <title>Catálogo | Confeitaria Saturno</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ <style>
+ .saturno-whatsapp-flutuante{position:fixed;right:24px;bottom:24px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#25d366;color:#fff;font-size:32px;text-decoration:none;box-shadow:0 7px 25px #0003;z-index:9999;transition:transform .2s}
+ .saturno-whatsapp-flutuante:hover{transform:translateY(-4px);color:#fff}
+ .saturno-whatsapp-flutuante:focus-visible{outline:3px solid #713d50;outline-offset:4px}
+ @media(max-width:720px){.saturno-whatsapp-flutuante{right:16px;bottom:16px;width:54px;height:54px;font-size:29px}}
+ </style>
+</head>
+<body class="pagina-catalogo">
+ <div class="aviso">Um universo de sabores para você <span>✳</span> Feito com carinho em Belo Horizonte</div>
+ <header class="cabecalho">
+  <nav class="navegacao container" aria-label="Navegação principal">
+   <a class="marca" href="index.html" aria-label="Saturno Confeitaria — Início"><img src="imagens/logo-principal.png" alt=""><span>saturno<small>CONFEITARIA</small></span></a>
+   <ul class="menu"><li><a href="index.html">Início</a></li><li><a href="catalogo.html" aria-current="page">Catálogo</a></li><li><a href="index.html#sobre">Nossa história</a></li><li><a href="index.html#contato">Contato</a></li></ul>
+   <a class="nav-pedido" href="https://wa.me/5531987358320?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20encomenda." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Fazer pedido <span>↗</span></a>
+  </nav>
+ </header>
+ <main>
+  <section class="catalogo-hero"><div class="container"><div class="sobretitulo"><span class="ponto"></span> NOSSAS DELÍCIAS • SATURNO</div><h1>Um universo de <em>sabores.</em></h1><p>Conheça nossas criações artesanais e encontre a escolha perfeita para celebrar cada momento. Escolha uma categoria e peça seu orçamento pelo WhatsApp.</p></div></section>
+  <section class="catalogo-area" id="catalogo"><div class="container">
+   <div class="catalogo-cabecalho"><h2>Explore nosso catálogo</h2><p>Feito com carinho, pensado para você.</p></div>
+   <div class="filtros" role="group" aria-label="Filtrar produtos por categoria"><button class="filtro ativo" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+<button class="filtro" type="button" data-filtro="bolos" aria-pressed="false">Bolos</button>
+<button class="filtro" type="button" data-filtro="doces" aria-pressed="false">Doces</button>
+<button class="filtro" type="button" data-filtro="festas" aria-pressed="false">Festas e eventos</button>
+<button class="filtro" type="button" data-filtro="salgados" aria-pressed="false">Salgados</button>
+<button class="filtro" type="button" data-filtro="tabuas" aria-pressed="false">Tábuas de frios</button></div>
+   <div class="produtos" id="lista-produtos"><article class="produto" data-categoria="bolos">
+ <div class="produto-imagem"><img src="imagens/bolos/bolo.png" alt="Bolo personalizado da Confeitaria Saturno" loading="lazy"><span class="produto-etiqueta">Bolos personalizados</span></div>
+ <div class="produto-corpo"><h3>Bolos personalizados</h3><p>Bolos preparados com carinho para transformar cada comemoração em uma lembrança especial.</p><a class="botao" href="https://wa.me/5531987358320?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20um%20bolo%20personalizado." target="_blank" rel="noopener noreferrer">Solicitar orçamento <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+</article>
+<article class="produto" data-categoria="doces">
+ <div class="produto-imagem"><img src="imagens/doces/doces.png" alt="Doces artesanais da Confeitaria Saturno" loading="lazy"><span class="produto-etiqueta">Doces artesanais</span></div>
+ <div class="produto-corpo"><h3>Doces artesanais</h3><p>Pequenas delícias feitas para adoçar encontros, festas e momentos especiais.</p><a class="botao" href="https://wa.me/5531987358320?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20doces%20artesanais." target="_blank" rel="noopener noreferrer">Solicitar orçamento <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+</article>
+<article class="produto" data-categoria="festas">
+ <div class="produto-imagem"><img src="imagens/festas e eventos/festa.png" alt="Festa e evento organizado pela Confeitaria Saturno" loading="lazy"><span class="produto-etiqueta">Festas e eventos</span></div>
+ <div class="produto-corpo"><h3>Festas e eventos</h3><p>Detalhes e sabores especiais para celebrar momentos que merecem ser lembrados.</p><a class="botao" href="https://wa.me/5531987358320?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20uma%20festa%20ou%20evento." target="_blank" rel="noopener noreferrer">Solicitar orçamento <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+</article>
+<article class="produto" data-categoria="salgados">
+ <div class="produto-imagem"><img src="imagens/salgados/salgados.png" alt="Salgados da Confeitaria Saturno" loading="lazy"><span class="produto-etiqueta">Salgados</span></div>
+ <div class="produto-corpo"><h3>Salgados</h3><p>Opções salgadas para completar a mesa e deixar sua celebração ainda mais gostosa.</p><a class="botao" href="https://wa.me/5531987358320?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20salgados." target="_blank" rel="noopener noreferrer">Solicitar orçamento <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+</article>
+<article class="produto" data-categoria="tabuas">
+ <div class="produto-imagem"><img src="imagens/tabuas de frios/tabua.png" alt="Tábua de frios da Confeitaria Saturno" loading="lazy"><span class="produto-etiqueta">Tábuas de frios</span></div>
+ <div class="produto-corpo"><h3>Tábuas de frios</h3><p>Seleções especiais para compartilhar em encontros, comemorações e ocasiões especiais.</p><a class="botao" href="https://wa.me/5531987358320?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20uma%20t%C3%A1bua%20de%20frios." target="_blank" rel="noopener noreferrer">Solicitar orçamento <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+</article></div>
+  </div></section>
+  <section class="catalogo-final"><div class="sobretitulo">✳ ENCOMENDAS PERSONALIZADAS</div><h2>Tem uma ideia especial?</h2><p>Conte o que você está planejando. Vamos conversar sobre os sabores e detalhes da sua comemoração.</p><a class="botao" href="https://wa.me/5531987358320?text=Ol%C3%A1%21%20Gostaria%20de%20conversar%20sobre%20uma%20encomenda%20personalizada." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Conversar no WhatsApp</a></section>
+ </main>
+ <footer class="rodape"><div class="rodape-conteudo container"><div class="rodape-marca">saturno <span>♡</span></div><p>© 2026 Confeitaria Saturno. Todos os direitos reservados.</p><small>Jardim Alvorada — Belo Horizonte, MG</small></div></footer>
+ <script>
+ // Filtros próprios do catálogo, sem depender de outros arquivos JavaScript.
+ (() => {
+   const buttons = [...document.querySelectorAll('.pagina-catalogo .filtro')];
+   const products = [...document.querySelectorAll('.pagina-catalogo .produto')];
+   const valid = ['todos','bolos','doces','festas','salgados','tabuas'];
+   function filter(category) {
+     if (!valid.includes(category)) category='todos';
+     buttons.forEach(button => { const active=button.dataset.filtro===category; button.classList.toggle('ativo',active); button.setAttribute('aria-pressed',String(active)); });
+     products.forEach(product => {product.hidden = category !== 'todos' && product.dataset.categoria !== category;});
+   }
+   buttons.forEach(button => button.addEventListener('click', () => {
+     filter(button.dataset.filtro);
+     const params=new URLSearchParams(window.location.search);
+     if (button.dataset.filtro==='todos') params.delete('categoria'); else params.set('categoria',button.dataset.filtro);
+     history.replaceState(null,'',window.location.pathname+(params.toString()?'?'+params:'')+window.location.hash);
+   }));
+   filter(new URLSearchParams(window.location.search).get('categoria') || 'todos');
+ })();
+ </script>
+ <a class="saturno-whatsapp-flutuante" href="https://wa.me/5531987358320?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20encomenda." target="_blank" rel="noopener noreferrer" aria-label="Fazer pedido pelo WhatsApp" title="Fazer pedido pelo WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+</body>
+</html>
